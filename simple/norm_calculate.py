@@ -19,7 +19,7 @@ def calculate_vector_sqaure_norm(tensor, dim=None):
     # 计算无穷范数
     # inf_norm = LA.norm(tensor, ord=inf)
     # 计算二范数
-    sqaure_norm = LA.norm(tensor, dim)
+    sqaure_norm = LA.vector_norm(tensor, ord=2, dim=dim)
     return sqaure_norm
 
 def calculate_matrix_sqaure_norm(matrix, dim=(-2,-1)):
